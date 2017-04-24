@@ -1,15 +1,15 @@
 Package.describe({
-  name: 'saucecode:rollbar',
-  version: '0.5.8',
+  name: 'rjgb:rollbar',
+  version: '0.6.5',
   summary: 'Rollbar error reporting integrations for Meteor',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.2');
+  api.versionsFrom('METEOR@1.4');
 
   Npm.depends({
-    rollbar: '0.5.8'
+    rollbar: '0.6.5'
   });
 
   api.use([

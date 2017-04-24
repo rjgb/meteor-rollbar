@@ -1,4 +1,4 @@
-# saucecode:rollbar
+# rjgb:rollbar
 
 Kickass [Rollbar](https://rollbar.com/) integration for Meteor projects.
 
