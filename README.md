@@ -6,7 +6,8 @@ Kickass [Rollbar](https://rollbar.com/) integration for Meteor projects.
 
 1. Run `meteor add saucecode:rollbar`
 2. Set `'ROLLBAR_SERVER_ACCESS_TOKEN'`, and optionally `'ROLLBAR_CLIENT_ACCESS_TOKEN'` (if you want to enable the browserJS rollbar reporter) and also optionally, the `'ROLLBAR_ENVIRONMENT'`environment variables with your [client and server access tokens for rollbar](https://rollbar.com/)
-3. Run meteor
+3. Or set `Meteor.settings['private'].rollbarApiSecret` and optionally `Meteor.settings['public'].rollbarApiToken` (if you want to enable the browserJS rollbar reporter) and also optionally, the `Meteor.settings['public'].rollbarEnvironment` variables with your [client and server access tokens for rollbar](https://rollbar.com/)
+4. Run meteor
 
 E.g.
 
