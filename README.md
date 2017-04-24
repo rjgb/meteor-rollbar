@@ -2,6 +2,8 @@
 
 Kickass [Rollbar](https://rollbar.com/) integration for Meteor projects.
 
+Current Rollbar version is 0.6.5.
+
 ### Installation
 
 1. Run `meteor add saucecode:rollbar`
