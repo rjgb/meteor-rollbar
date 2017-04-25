@@ -1,6 +1,6 @@
 Package.describe({
   name: 'rjgb:rollbar',
-  version: '1.0.2',
+  version: '1.0.3',
   summary: 'Rollbar error reporting integrations for Meteor',
   documentation: 'README.md'
 });

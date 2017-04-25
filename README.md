@@ -6,7 +6,7 @@ Current Rollbar version is 0.6.5.
 
 ### Installation
 
-1. Run `meteor add saucecode:rollbar`
+1. Run `meteor add rjgb:rollbar`
 2. Set `'ROLLBAR_SERVER_ACCESS_TOKEN'` evnironment variable or `Meteor.settings['private'].rollbarServerAccessToken`.
 3. Optional environment variables:<br>
 `'ROLLBAR_CLIENT_ACCESS_TOKEN'` - Set to enable the browserJS rollbar reporter.<br>
