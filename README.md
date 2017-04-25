@@ -15,7 +15,7 @@ Current Rollbar version is 0.6.5.
 4. Optional Meteor settings:<br>
 `Meteor.settings['public'].rolllclientAccessToken` - Set to enable the browserJS rollbar reporter.<br>
 `Meteor.settings['public'].rollbarEnvironment` - Set reporting environment.<br>
-`Meteor.settings['public'].rollbarExitOnUncaughtException` - Defaults to true.
+`Meteor.settings['private'].rollbarExitOnUncaughtException` - Defaults to true.
 5. Run meteor
 
 Example with environment variables.
