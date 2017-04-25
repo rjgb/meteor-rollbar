@@ -7,15 +7,22 @@ Current Rollbar version is 0.6.5.
 ### Installation
 
 1. Run `meteor add saucecode:rollbar`
-2. Set `'ROLLBAR_SERVER_ACCESS_TOKEN'`, and optionally `'ROLLBAR_CLIENT_ACCESS_TOKEN'` (if you want to enable the browserJS rollbar reporter) and also optionally, the `'ROLLBAR_ENVIRONMENT'`environment variables with your [client and server access tokens for rollbar](https://rollbar.com/)
-3. Or set `Meteor.settings['private'].rollbarServerAccessToken` and optionally `Meteor.settings['public'].rolllclientAccessToken` (if you want to enable the browserJS rollbar reporter) and also optionally, the `Meteor.settings['public'].rollbarEnvironment` variables with your [client and server access tokens for rollbar](https://rollbar.com/)
-4. Run meteor
+2. Set `'ROLLBAR_SERVER_ACCESS_TOKEN'` evnironment variable or `Meteor.settings['private'].rollbarServerAccessToken`.
+3. Optional environment variables:<br>
+`'ROLLBAR_CLIENT_ACCESS_TOKEN'` - Set to enable the browserJS rollbar reporter.<br>
+`'ROLLBAR_ENVIRONMENT'` - Set reporting environment.<br>
+`'ROLLBAR_EXIT_ON_UNCAUGHT_EXCEPTION'` - Defaults to true.
+4. Optional Meteor settings:<br>
+`Meteor.settings['public'].rolllclientAccessToken` - Set to enable the browserJS rollbar reporter.<br>
+`Meteor.settings['public'].rollbarEnvironment` - Set reporting environment.<br>
+`Meteor.settings['public'].rollbarExitOnUncaughtException` - Defaults to true.
+5. Run meteor
 
-E.g.
+Example with environment variables.
 
 ```bash
 $ meteor add saucecode:rollbar
-$ ROLLBAR_SERVER_ACCESS_TOKEN=acefaketoken1 ROLLBAR_CLIENT_ACCESS_TOKEN=acefaketoken2imsocreative ROLLBAR_ENVIRONMENT=development meteor
+$ ROLLBAR_SERVER_ACCESS_TOKEN=acefaketoken1 ROLLBAR_CLIENT_ACCESS_TOKEN=acefaketoken2imsocreative ROLLBAR_ENVIRONMENT=development ROLLBAR_EXIT_ON_UNCAUGHT_EXCEPTION=false meteor
 ```
 
 ### Usage

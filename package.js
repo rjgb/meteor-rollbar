@@ -1,6 +1,6 @@
 Package.describe({
   name: 'rjgb:rollbar',
-  version: '1.0.1',
+  version: '1.0.2',
   summary: 'Rollbar error reporting integrations for Meteor',
   documentation: 'README.md'
 });
@@ -11,11 +11,6 @@ Package.onUse(function(api) {
   Npm.depends({
     rollbar: '0.6.5'
   });
-
-  api.use([
-    'check',
-    'underscore'
-  ], 'server');
 
   api.addFiles('lib/server/rollbar-server.js', 'server');
   api.addFiles('lib/client/rollbar-client.js', 'client');
